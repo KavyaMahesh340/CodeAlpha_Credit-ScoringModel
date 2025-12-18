@@ -1,24 +1,32 @@
-Credit Scoring Model - CodeAlpha ML Internship
-Task 1: Predict an individual's creditworthiness using machine learning classification algorithms.
-📋 Project Overview
+# Credit Scoring Model - CodeAlpha ML Internship
+
+**Task 1:** Predict an individual's creditworthiness using machine learning classification algorithms.
+
+## 📋 Project Overview
+
 This project implements a credit scoring system that predicts whether a customer is creditworthy based on their financial history. The model helps financial institutions make informed lending decisions by assessing the risk of default.
-🎯 Objective
+
+## 🎯 Objective
+
 Build and compare multiple machine learning classification models to predict creditworthiness with high accuracy and reliability.
-🛠️ Technologies Used
 
-Python 3.8+
-pandas - Data manipulation
-numpy - Numerical computations
-scikit-learn - Machine learning algorithms
-matplotlib & seaborn - Data visualization
+## 🛠️ Technologies Used
 
-📊 Models Implemented
+- **Python 3.8+**
+- **pandas** - Data manipulation
+- **numpy** - Numerical computations
+- **scikit-learn** - Machine learning algorithms
+- **matplotlib & seaborn** - Data visualization
 
-Logistic Regression - Baseline linear model
-Decision Tree - Non-linear tree-based model
-Random Forest - Ensemble model (typically best performer)
+## 📊 Models Implemented
 
-📁 Project Structure
+1. **Logistic Regression** - Baseline linear model
+2. **Decision Tree** - Non-linear tree-based model
+3. **Random Forest** - Ensemble model (typically best performer)
+
+## 📁 Project Structure
+
+```
 CodeAlpha_CreditScoringModel/
 │
 ├── credit_scoring_model.py    # Main implementation
@@ -26,15 +34,18 @@ CodeAlpha_CreditScoringModel/
 ├── README.md                   # This file
 ├── data/                       # Dataset folder (optional)
 └── results/                    # Output visualizations
-🚀 How to Run
-Option 1: Google Colab (Recommended)
+```
 
-Open Google Colab
-Upload credit_scoring_model.py
-Run all cells
+## 🚀 How to Run
 
-Option 2: Local Machine
-bash# Clone the repository
+### Option 1: Google Colab (Recommended)
+1. Open [Google Colab](https://colab.research.google.com)
+2. Upload `credit_scoring_model.py`
+3. Run all cells
+
+### Option 2: Local Machine
+```bash
+# Clone the repository
 git clone https://github.com/yourusername/CodeAlpha_CreditScoringModel.git
 cd CodeAlpha_CreditScoringModel
 
@@ -43,24 +54,34 @@ pip install -r requirements.txt
 
 # Run the model
 python credit_scoring_model.py
-📈 Key Features
+```
 
-Feature Engineering: Debt-to-income ratio, credit utilization, payment history
-Model Comparison: Side-by-side evaluation of 3 algorithms
-Performance Metrics: Accuracy, Precision, Recall, F1-Score, ROC-AUC
-Visualization: ROC curves, confusion matrices, feature importance
-Prediction Function: Real-time creditworthiness assessment
+## 📈 Key Features
 
-📊 Sample Results
-ModelAccuracyPrecisionRecallF1-ScoreROC-AUCLogistic Regression82%80%78%79%85%Decision Tree78%76%75%75%80%Random Forest88%87%85%86%92%
-🔍 Key Insights
+- **Feature Engineering**: Debt-to-income ratio, credit utilization, payment history
+- **Model Comparison**: Side-by-side evaluation of 3 algorithms
+- **Performance Metrics**: Accuracy, Precision, Recall, F1-Score, ROC-AUC
+- **Visualization**: ROC curves, confusion matrices, feature importance
+- **Prediction Function**: Real-time creditworthiness assessment
 
-Payment History is the most important feature (35% importance)
-Credit Utilization significantly impacts creditworthiness (28% importance)
-Random Forest outperforms other models due to ensemble learning
+## 📊 Sample Results
 
-📝 How to Use for Prediction
-pythonfrom credit_scoring_model import CreditScoringModel
+| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|-------|----------|-----------|--------|----------|---------|
+| Logistic Regression | 82% | 80% | 78% | 79% | 85% |
+| Decision Tree | 78% | 76% | 75% | 75% | 80% |
+| **Random Forest** | **88%** | **87%** | **85%** | **86%** | **92%** |
+
+## 🔍 Key Insights
+
+- **Payment History** is the most important feature (35% importance)
+- **Credit Utilization** significantly impacts creditworthiness (28% importance)
+- Random Forest outperforms other models due to ensemble learning
+
+## 📝 How to Use for Prediction
+
+```python
+from credit_scoring_model import CreditScoringModel
 
 # Initialize and train model
 model = CreditScoringModel()
@@ -83,25 +104,46 @@ customer = {
 
 result = model.predict_creditworthiness(customer)
 print(result)
-📚 Dataset Information
+```
+
+## 📚 Dataset Information
+
 The model uses the following features:
+- **income**: Annual income in dollars
+- **age**: Customer age
+- **employment_years**: Years at current job
+- **debt**: Total outstanding debt
+- **credit_utilization**: Percentage of available credit used
+- **payment_history**: Payment consistency score (0-100)
+- **num_credit_accounts**: Number of active credit accounts
+- **credit_age_months**: Age of oldest credit account
+- **debt_to_income**: Debt-to-income ratio
 
-income: Annual income in dollars
-age: Customer age
-employment_years: Years at current job
-debt: Total outstanding debt
-credit_utilization: Percentage of available credit used
-payment_history: Payment consistency score (0-100)
-num_credit_accounts: Number of active credit accounts
-credit_age_months: Age of oldest credit account
-debt_to_income: Debt-to-income ratio
+**Target Variable:** `creditworthy` (1 = Yes, 0 = No)
 
-Target Variable: creditworthy (1 = Yes, 0 = No)
-🎓 Learning Outcomes
+## 🎓 Learning Outcomes
 
-Data preprocessing and feature engineering
-Implementing multiple ML classification algorithms
-Model evaluation using various metrics
-Handling imbalanced datasets
-Hyperparameter tuning
-Real-world application of ML in finance
+- Data preprocessing and feature engineering
+- Implementing multiple ML classification algorithms
+- Model evaluation using various metrics
+- Handling imbalanced datasets
+- Hyperparameter tuning
+- Real-world application of ML in finance
+
+## 🤝 Contributing
+
+This is an internship project, but suggestions are welcome!
+
+## 📧 Contact
+
+M.KAVYA 
+Email:kavyamrkml@gmail.com
+
+
+## 📄 License
+
+This project is part of the CodeAlpha ML Internship program.
+
+---
+
+**CodeAlpha Machine Learning Internship - December 2025**
