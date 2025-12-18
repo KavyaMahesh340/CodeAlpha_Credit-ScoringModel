@@ -1,11 +1,4 @@
-"""
-Credit Scoring Model - CodeAlpha ML Internship Task 1
-Author: [Your Name]
-Date: December 2025
 
-This script implements a credit scoring model using multiple classification algorithms
-to predict creditworthiness based on financial data.
-"""
 
 import pandas as pd
 import numpy as np
